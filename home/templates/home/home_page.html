@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load static %}
+{% load wagtailcore_tags %}
+
+{% block body_class %}template-homepage{% endblock %}
+
+{% block extra_css %}
+
+{% comment %}
+Delete the line below if you're just getting started and want to remove the welcome screen!
+{% endcomment %}
+<link rel="stylesheet" href="{% static 'css/home_page.css' %}">
+{% endblock extra_css %}
+
+{% block content %}
+
+{% comment %}
+Delete the line below if you're just getting started and want to remove the welcome screen!
+{% endcomment %}
+
+
+    {% for section in page.body %}
+        {% include_block section %}
+    {% endfor %}
+
+    <div id="footer">
+        {% include 'sections/footer/footer.html' %}
+    </div>
+
+{% include 'sections/expanded_navbar/expanded_navbar.html' %}
+
+<div class="modal-overlay"></div>
+
+
+<script type="text/javascript" src="{% static 'js/header.script.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/navbar.script.js' %}"></script>
+
+{% endblock content %}

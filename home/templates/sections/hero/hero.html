@@ -1,0 +1,50 @@
+{% load wagtailimages_tags %}
+
+<body>
+  <div class="hero-responsive-wrapper">
+    <div class="responsive-wrapper">
+      <div class="hero-wrapper">
+        <div class="hero-container">
+          <div class="hero-child">
+            <p class="text-bold hero-text">
+              {{ self.hero_text_section.hero_text }}
+            </p>
+            <p class="hero-subtext">
+              {{ self.hero_text_section.hero_subtext }}
+            </p>
+            <div class="hero-cta-container">
+              <input type="text" placeholder="Enter your work email" />
+              <div class="hero-cta">Get a Demo</div>
+            </div>
+          </div>
+
+          <div class="hero-child">
+            <img
+              src={{ self.hero_image_section.hero_image_url }}
+              height={{ self.hero_image_section.image_height }}
+              alt="hero-image"
+            />
+          </div>
+        </div>
+        <div class="hero-video-cta-container">
+          <img
+            src="https://assets.www.happyfox.com/v2/images/hero-fold/AI_Arrow.svg"
+            alt=""
+          />
+          <div>
+            <p class="hero-video-cta">
+              <img
+                src="https://assets.www.happyfox.com/v2/images/version_2_play.svg"
+                width="38"
+                height="38"
+                style="margin-right: 10px"
+                alt="play button"
+              />
+              {{ self.hero_video_cta_section.video_cta_text }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

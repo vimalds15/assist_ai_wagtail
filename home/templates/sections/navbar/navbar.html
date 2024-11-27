@@ -1,0 +1,76 @@
+<body>
+  <div id="navbar" class="navbar">
+    <div class="navbar-wrapper">
+      <div class="navbar-left">
+        <img
+          src={{ self.navbar_logo_url }}
+          class="hamburger-menu-icon"
+          alt=""
+        />
+        <a href="#" class="navbar-logo-container">
+          <img
+            src="https://assets.www.happyfox.com/v2/images/site-nav/hf-AI-logo.svg"
+          />
+          <p class="navbar-helpdesk-title">{{ self.navbar_title }}</p>
+        </a>
+      </div>
+
+      <div>
+        <div class="navbar-options-container">
+          {% for item in self.navbar_items %}
+            <div class="navbar-options-item" id="{{ item.navbar_item_id }}" >
+              <p>{{ item.navbar_item_title }}</p>
+              {% if item.navbar_item_has_child %}
+                <img
+                  src="https://assets.www.happyfox.com/v2/images/site-nav/menu-togle-arrow-gray-up.png"
+                  alt="arrow-down"
+                  class="arrow-down"
+                />
+              {% endif %}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="navbar-demo-cta">
+        <p class="text-sm">{{ self.navbar_cta_text }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="mobile-navbar">
+    <div class="mobile-navbar-wrapper">
+      <div class="navbar-item">
+        <div class="navbar-header">
+          <p>Products</p>
+          <p class="toggle">+</p>
+        </div>
+        <div class="navbar-content">
+          <p>Helpdesk</p>
+          <p>Service Desk</p>
+          <p>HappyFox AI</p>
+          <p>Assist AI</p>
+          <p>Chatbot</p>
+        </div>
+      </div>
+
+      <div class="navbar-item">
+        <div class="navbar-header">
+          <p>Features</p>
+          <p class="toggle">+</p>
+        </div>
+        <div class="navbar-content">
+          <div class="nested-item">
+            <div class="navbar-header">
+              <p>Overview</p>
+              <p class="toggle">+</p>
+            </div>
+            <div class="navbar-content">
+              <p>Helpdesk Tour</p>
+              <p>Get a Demo</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

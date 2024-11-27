@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import "./header.style.css";
+@import "./navbar.style.css";
+@import "./hero.style.css";
+@import "./experience.style.css";
+@import "./unlimited.style.css";
+@import "./categories.style.css";
+@import "./footer.style.css";
+@import "./future.style.css";
+@import "./integration.style.css";
+@import "./demo.style.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", "sans-serif";
+}
+
+:root {
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+}
+
+a {
+  text-decoration: none;
+  color: #111;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5 !important;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.text-secondary {
+  color: #9b9b9b;
+  font-weight: 300;
+}
+
+.text-xsm {
+  font-size: 12px;
+}
+
+.text-sm {
+  font-size: 14px;
+}
+
+.text-bold {
+  font-weight: 500;
+}
+
+.text-lg {
+  font-size: 19px;
+}
+
+.text-xlg {
+  font-size: 24px;
+}
+
+.text-xl {
+  font-size: 32px;
+}
+
+.text-2xl {
+  font-size: 40px;
+}
+
+.text-3xl {
+  font-size: 48px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.arrow-down {
+  height: 8px;
+  margin-top: 2px;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.chevron-right {
+  width: 50px;
+  height: 50px;
+  fill: black;
+  transition: fill 0.3s ease;
+}
+
+.chevron-right:hover {
+  fill: white;
+}
+
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 7.8%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 5;
+  pointer-events: none;
+}
+
+.text-left {
+  text-align: left;
+}

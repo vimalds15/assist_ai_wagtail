@@ -1,0 +1,6 @@
+/.dockerignore
+/.vscode
+/Dockerfile
+/env
+env/
+env/**

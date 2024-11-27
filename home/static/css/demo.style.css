@@ -1,0 +1,68 @@
+.demo-responsive-wrapper {
+  background: #fafafa
+    url(//assets.www.happyfox.com/v2/images/enterprise/eneterrpise-cta-bg.png);
+  background-repeat: no-repeat;
+  background-position: 50% 80%;
+  background-size: cover;
+}
+
+.demo-container {
+  padding: 120px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.demo-title {
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  color: #000;
+}
+
+.demo-description {
+  max-width: 590px;
+  margin: 40px auto 50px;
+  text-align: center;
+  font-weight: 300;
+  color: #555;
+}
+
+.demo-cta {
+  background: #f2c234;
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  outline: 0;
+  border: none;
+  display: inline-block;
+  box-shadow: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  position: relative;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+  width: fit-content;
+  min-width: 198px;
+  min-height: 46px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.demo-cta:hover {
+  transform: translate(0, 3px);
+}
+
+@media (min-width: 768px) {
+  .demo-title {
+    font-size: 32px;
+    line-height: 1.25;
+  }
+}
+
+@media (max-width: 768px) {
+  .demo-container {
+    padding: 60px 0;
+  }
+}

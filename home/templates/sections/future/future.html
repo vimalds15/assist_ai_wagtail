@@ -1,0 +1,24 @@
+<body>
+  <div class="future-responsive-wrapper">
+    <div class="responsive-wrapper">
+      <div class="future-container">
+        <div class="future-item">
+          <img
+            src={{ self.future_image_url }}
+            class="responsive-img"
+            style="border-radius: 16px; max-width: 555px; width: 100%"
+          />
+        </div>
+        <div class="future-item future-content">
+          <p class="unlimited-title text-left">
+            {{ self.future_title }}
+          </p>
+          <p class="category-description">
+            {{ self.future_description }}
+          </p>
+          <p class="future-cta">{{ self.future_cta_section.future_cta }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

@@ -1,0 +1,21 @@
+<body>
+  <div class="cateogories-responsive-wrapper">
+    <div class="responsive-wrapper">
+      <div class="categories-container">
+        {% for item in self.categories %}
+          <div class="categories-item">
+            <img
+              src={{ item.category_image_url }}
+              class="category-img"
+              style="max-height: 76px"
+            />
+            <p class="unlimited-title text-left">{{ item.category_title }}</p>
+            <p class="category-description">
+              {{ item.category_description }}
+            </p>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</body>

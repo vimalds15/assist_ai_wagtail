@@ -1,0 +1,25 @@
+<body>
+  <div class="integration-responsive-wrapper">
+    <div class="responsive-wrapper">
+      <div class="integration-container">
+        <p class="text-white text-bold integration-title">
+          {{ self.integration_title }}
+        <p class="integration-description">
+          {{ self.integration_description }}
+        </p>
+        <img
+          src={{ self.desktop_image_url }}
+          class="responsive-img integration-desktop"
+          alt="We get by with a little help — from our growing list of integrations"
+          style="margin: 30px 0"
+        />
+        <img
+          src={{ self.mobile_image_url }}
+          class="responsive-img integration-mobile"
+          alt="We get by with a little help — from our growing list of integrations"
+          style="margin: 30px 0"
+        />
+      </div>
+    </div>
+  </div>
+</body>

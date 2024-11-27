@@ -1,0 +1,28 @@
+<body>
+  <div class="experience-responsive-wrapper">
+    <div class="responsive-wrapper">
+      <div class="experience-container">
+        <div class="experience-item experience-content">
+          <p class="experience-title">
+            {{ self.experience_title }} <br />
+            {{ self.experience_subtitle }}
+          </p>
+          <p class="experience-question">
+            {{ self.experience_question }}
+          </p>
+          <p class="experience-answer">
+            {{ self.experience_answer }}
+          </p>
+        </div>
+        <div class="experience-item experience-image">
+          <img
+            src={{ self.experience_image_url }}
+            class="responsive-img"
+            alt="Experience the HappyFox difference with Assist AI"
+            style="border-radius: 16px; max-width: 538px"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
